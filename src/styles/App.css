@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+@font-face {
+    font-family: 'Merchant Copy';
+    src: url('../assets/fonts/Merchant Copy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merchant Copy Doublesize';
+    src: url('../assets/fonts/Merchant Copy Doublesize.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merchant Copy Wide';
+    src: url('../assets/fonts/Merchant Copy Wide.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Merchant Copy';
+    font-size: 22px;
+    @apply text-slate-900;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 567px) {
+        font-size: 11px;
+    }
+}
+
+.font-wide {
+    font-family: 'Merchant Copy Wide';
+}
+
+.font-double {
+    font-family: 'Merchant Copy Doublesize';
+}

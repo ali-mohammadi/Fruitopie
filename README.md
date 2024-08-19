@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Fruitopie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fruitopie is a frontend application designed to help users manage and organize a collection of fruits with their calories. This project is built using React and TailwindCSS.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Running the App](#running-the-app)
+- [Testing](#testing)
+- [Project Structure](#project-structure)
+- [License](#license)
+- [About](#about)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started with Fruitopie, follow these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Clone the repository**:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/ali-mohammadi/fruitopie.git
+   cd fruitopie
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**:
 
-### `npm run build`
+   Use Yarn to install the project dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   yarn install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   This will install all the required packages as specified in the `package.json` file.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Running the App
 
-### `npm run eject`
+To start the development server and run the app locally, use the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the application on `http://localhost:3000/` by default.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Testing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Fruitopie comes with a set of unit and integration tests to ensure the application behaves as expected. To run the tests, use the following command:
 
-## Learn More
+```bash
+npm run test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project structure follows a standard React project layout:
+
+```
+fruitopie/
+├── public/                 # Public assets
+├── src/                    # Source code
+│   ├── assets/             # Static assets
+│   ├── components/         # React components
+│   ├── configs/            # Configuration files
+│   ├── hocs/               # Higher order components
+│   ├── models/             # Models for types
+│   ├── pages/              # App view pages
+│   ├── reducers/           # React reducers
+│   ├── styles/             # React css styles
+│   ├── utility/            # Utility functions
+│   ├── App.js              # Main App component
+│   ├── index.js            # Entry point
+│   └── ...
+├── .gitignore              # Git ignore file
+├── package.json            # Project metadata and dependencies
+├── README.md               # Project documentation
+└── yarn.lock               # Yarn lock file
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## About
+
+This project is maintained by [Ali Teshnizi](mailto:your-email@example.com). Feel free to reach out via email if you have any questions.
