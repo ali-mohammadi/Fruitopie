@@ -37,7 +37,7 @@ To get started with Fruitopie, follow these steps:
 To start the development server and run the app locally, use the following command:
 
 ```bash
-npm start
+yarn start
 ```
 
 This will start the application on `http://localhost:3000/` by default.
@@ -47,7 +47,7 @@ This will start the application on `http://localhost:3000/` by default.
 Fruitopie comes with a set of unit and integration tests to ensure the application behaves as expected. To run the tests, use the following command:
 
 ```bash
-npm run test
+yarn run test
 ```
 
 ## Project Structure
